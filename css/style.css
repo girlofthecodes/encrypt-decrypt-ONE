@@ -1,0 +1,323 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+main{
+    background-color: rgba(243, 245, 252, 1);
+    height: 80%;
+}
+
+.encoder{
+    width: 100%;
+    height: 100vh;
+}
+
+.encrypt{
+    width: 50%; 
+    height: 100%;
+    position: absolute;
+}
+
+.encrypt textarea{
+    position: absolute; 
+    left: 30%; 
+    top: 15%;
+    border: none; /*Quita el borde del cuadro !colocar en none*/ 
+    background: transparent; /*Quita el fondo del cuadro*/
+    font-family: "Libre Baskerville", serif;
+    font-size: 1rem;
+    border: none;
+    outline: none; /*Quita el borde lineal*/
+}
+
+.warning{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30%;
+    bottom: 18%;
+    font-size: 20px;
+}
+
+.warning svg{
+    width: 5%;
+    height: 5%;
+}
+
+.buttons{
+    display: flex; 
+    flex-direction: row;
+    position: absolute; 
+    left: 30%;
+    bottom: 10%;
+}
+
+.buttons button{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.buttons button:first-child{
+    background-color: rgba(10, 56, 113, 1);
+    color: white;
+    border: none;
+}
+
+.buttons button:last-child{
+    margin-left: 20px;
+    background-color: rgba(216, 223, 232, 1);
+    color: rgba(10, 56, 113, 1);
+    border: 1px solid rgba(10, 56, 113, 1);
+}
+
+.decrypt{
+    display: flex; 
+    justify-content: center;
+    position: absolute; 
+    background-color: white;
+    width: 30%; 
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    border-radius: 30px;
+}
+
+#image{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 15%;
+    left: 15%;
+}
+
+.message-encrypt{
+    display: flex; 
+    flex-direction:column; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute; 
+    top: 70%; 
+    left: 0;
+    text-align: center;
+}
+
+.message-encrypt h2{
+    width: 60%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.message-encrypt p{
+    width: 80%; 
+    line-height: 150%;
+    font-size: 15px;
+    text-align: center;
+}
+
+#show{
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    height: 85%;
+    position: absolute; 
+    top: 10%;
+}
+
+#copy-text{
+    font-family: "Libre Baskerville", serif;
+    font-size: 1rem;
+    visibility: hidden;
+    background-color: transparent;
+    width: 80%;
+    height: 50%;
+    border: none;
+    outline: none;
+}
+
+#copy-btn{
+    visibility: hidden;
+    width: 80%;
+    height: 10%;
+    border-radius: 50px;
+    background-color: rgba(216, 223, 232, 1);
+    color: rgba(10, 56, 113, 1);
+    border: 1px solid rgba(10, 56, 113, 1);
+    position: absolute; 
+    bottom: 0;
+}
+
+footer{
+    background-color: rgba(136, 157, 234, 0.5);
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+
+.social{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.social h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.social ul{
+    list-style: none;
+    display: inline-block; 
+}
+
+.social li{
+    display: inline; 
+    vertical-align: text-top;
+    padding: 20px; 
+
+}
+
+.social img {
+    width: 10%;
+    height: 10%;
+}
+
+/*Responsive design*/
+@media (max-width: 57.5em){
+    .encoder{
+        display: flex; 
+        flex-direction: row; 
+    }
+
+    .encrypt{
+        width: 100%;
+    }
+
+    .encrypt textarea{
+        background-color: transparent;
+        width: 80%;
+        height: 40%;
+        left: 10%;
+        top: 10%;
+        font-size: 30px;
+    }
+
+    .warning{
+        align-items: center;
+        left: 10%;
+        bottom: 50%;
+    }
+
+
+    .buttons{
+        left: 10%; 
+        top: 50%;
+    }
+
+    .buttons button{
+        font-size: 20px;
+        width: 300px;
+    }
+    
+    .decrypt{
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        width: 80%;
+        height: 30%;
+        left: 10%;
+        top: 65%;
+    }
+
+    #image{
+        display: none;
+    }
+
+    .message-encrypt{
+        top: 20%;
+    }
+
+    .message-encrypt h2{
+        font-size: 40px;
+    }
+
+    .message-encrypt p{
+        font-size: 30px;
+    }
+
+    #copy-text{
+        font-size: 30px;
+    }
+
+    #copy-btn{
+        font-size: 20px;
+        width: 80%;
+        height: 20%;
+    }
+}
+
+@media(max-width: 574px){
+
+    .encrypt textarea{
+        font-size: 20px;
+    }
+
+    .warning p{
+        font-size: 15px;
+    }
+
+    .buttons{
+        flex-direction: column; 
+        gap: 20px;
+        left: 10%;
+    }
+
+    .buttons button{
+        width: 330px;
+    }
+
+    .buttons button:last-child{
+        margin-left: 0;
+    }
+
+    .message-encrypt{
+        line-height: 40px;
+    }
+    .message-encrypt h2{
+        font-size: 30px;
+    }
+
+    .message-encrypt p{
+        font-size: 20px;
+    }
+
+    #copy-text{
+        font-size: 20px;
+    }
+
+}
