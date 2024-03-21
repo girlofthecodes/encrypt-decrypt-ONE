@@ -18,8 +18,10 @@ Asímismo, puede encontrar un pie de página donde se observara el alias de la p
 
 ----------
 Por otra parte, también se adaptaron los tamaños para los dispositivos como Tablet y Telefono móvil. 
-- Telefono Móvil:![image](https://github.com/girlofthecodes/encrypt-decrypt-ONE/assets/98198757/421b3d9d-f63d-43f4-90ab-7ad078129768)
-- Tablet: ![image](https://github.com/girlofthecodes/encrypt-decrypt-ONE/assets/98198757/7786a643-203c-4747-a2f3-632bc2409d55)
+- Telefono Móvil:
+![image](https://github.com/girlofthecodes/encrypt-decrypt-ONE/assets/98198757/421b3d9d-f63d-43f4-90ab-7ad078129768)
+- Tablet:
+![image](https://github.com/girlofthecodes/encrypt-decrypt-ONE/assets/98198757/7786a643-203c-4747-a2f3-632bc2409d55)
 
 Aqui se puede observar un poco más de cerca la fluidez del proyecto: 
 https://github.com/girlofthecodes/encrypt-decrypt-ONE/assets/98198757/9cf4bba3-e6e3-476a-a946-c31342c84a97
