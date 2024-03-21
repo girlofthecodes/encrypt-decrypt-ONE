@@ -23,6 +23,7 @@ function copyText(){
         document.querySelector("#copy-text").style.visibility = "hidden";
         document.querySelector("#copy-btn").style.visibility = "hidden"; 
 
+        document.getElementById('text').value = ''; 
         
     }
 }
